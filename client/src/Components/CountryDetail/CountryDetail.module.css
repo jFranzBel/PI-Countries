@@ -1,0 +1,103 @@
+/* CountryDetail.module.css */
+
+/* Style for the main container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('/countries.png'); /* Replace with your image file path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(6px); /* Add a blur effect */
+    opacity: 0.9; /* Adjust the opacity for darkness */
+    z-index: -1; /* Place it below the content */
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+  }
+  
+  /* Style for the top left link */
+  .link {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .link img {
+    width: 35px;
+  }
+  
+  /* Style for the h2 */
+  .title {
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  /* Style for the detail container */
+  .detailContainer {
+    background-color: #f8f3ef;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 800px; /* Adjust the maximum width as needed */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Style for the image */
+  .imgFlag {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* Style for the details section */
+  .detailsSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Style for the h2 within the details section */
+  .detailsTitle {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  /* Style for the individual detail items */
+  .detailItem {
+    font-size: 16px;
+  }
+  
+  /* Style for the activities section */
+  .activitiesSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Style for the activities h3 */
+  .activitiesTitle {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  /* Style for the activity details */
+  .activityDetail {
+    font-size: 16px;
+  }

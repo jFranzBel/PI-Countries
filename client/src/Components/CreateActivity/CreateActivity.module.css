@@ -1,0 +1,84 @@
+/* Styling for the homeLogo */
+.container {
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+     background-color: #f8f3ef;
+     z-index: 1;
+}
+
+/* Style for the background image overlay */
+.container::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-image: url('/countries.png');
+     background-size: cover;
+     background-repeat: no-repeat;
+     filter: blur(6px);
+     opacity: 0.9;
+     z-index: -1;
+}
+
+/* Style for the card */
+.card {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+     padding: 20px;
+     border-radius: 3%;
+     background-color: #f8f3ef;
+     box-shadow: 0px 0px 10px rgba(3, 3, 3, 0.295);
+     width: 15%;
+     z-index: 2;
+}
+
+/* Style for the h1 element */
+.title {
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-size: 24px;
+     margin-bottom: 20px;
+     color: #333;
+}
+
+/* Style for the button element */
+.button {
+     background-color: #333;
+     color: #fff;
+     padding: 10px 20px;
+     border: none;
+     border-radius: 5%;
+     cursor: pointer;
+     text-decoration: none;
+     transition: background-color 0.3s;
+     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+     margin: auto;
+}
+
+.button:hover {
+     background-color: #555;
+}
+
+.homeLogo {
+     position: absolute;
+     top: 5px;
+     left: 5px;
+}
+
+.homeLogo img {
+     width: 50px;
+     height: 50px;
+     filter: invert(20%);
+     transition: filter invert 1s;
+}
+
+.homeLogo img:hover {
+     filter: invert(40%);
+}

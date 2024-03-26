@@ -1,0 +1,30 @@
+/* Paginado.module.css */
+
+/* Style for the paging container */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; 
+}
+  
+  /* Style for the individual paging button */
+button {
+  background-color: #333; 
+  color: #d3ceca; 
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px; 
+  margin: 0 4px; 
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+  
+/* Style for the current page button */
+button.current {
+  background-color: #555; 
+}
+
+nav img {
+  width: 10px;
+}

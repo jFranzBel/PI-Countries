@@ -1,0 +1,54 @@
+/* Home.module.css */
+.mainContainer {
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.mainContainer::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100vw;
+     /* Full width of the viewport */
+     height: 100vh;
+     /* Full height of the viewport */
+     background-image: url('/countries.png');
+     /* Replace with your image file path */
+     background-size: cover;
+     background-repeat: no-repeat;
+     opacity: 0.9;
+     /* Adjust the opacity for darkness */
+     z-index: -1;
+     filter: invert(.8) blur(6px);
+     /* Place it below the content */
+}
+
+/* Style for the filters row */
+.filtersRow {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     color: #333;
+}
+
+.filtersRow div {
+     padding-top: 15px;
+     margin-right: 100px;
+     margin-left: 100px;
+}
+
+/* Style for the card container */
+.cardContainer {
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+     gap: 20px;
+     padding: 20px;
+     max-width: 1700px;
+     margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+     .cardContainer {
+          grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+     }
+}
